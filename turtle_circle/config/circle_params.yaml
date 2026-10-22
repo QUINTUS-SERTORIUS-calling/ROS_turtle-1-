@@ -1,0 +1,5 @@
+turtle_circle:
+  ros__parameters:
+    period: 8.0        # 周期：转一圈所需时间 (s)
+    amplitude: 2.0     # 幅值：线速度 (m/s)，决定圆的半径
+    publish_rate: 20.0 # cmd_vel 发布频率 (Hz)

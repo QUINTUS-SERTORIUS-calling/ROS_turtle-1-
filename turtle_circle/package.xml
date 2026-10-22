@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>turtle_circle</name>
+  <version>0.1.0</version>
+  <description>
+    Drive the turtlesim turtle along a circle with configurable ROS 2 parameters
+    (period and amplitude), record cmd_vel / pose with rosbag2, and analyze the
+    recorded bag by plotting velocity and position versus time.
+  </description>
+  <maintainer email="ubuntu@todo.todo">ubuntu</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>turtlesim</depend>
+  <depend>rosbag2_py</depend>
+  <exec_depend>ros2launch</exec_depend>
+  <exec_depend>ros2bag</exec_depend>
+  <exec_depend>rqt_plot</exec_depend>
+  <exec_depend>rqt_graph</exec_depend>
+  <exec_depend>python3-matplotlib</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
